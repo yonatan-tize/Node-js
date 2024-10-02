@@ -11,6 +11,7 @@ export const getUsers = (req, res)=>{
 export const getUser = (req, res)=>{
     const userId = parseInt(req.params.id)
     res.json(users.filter(user => user.id === userId))
+    
 }
 
 export const postUser = (req, res)=>{
